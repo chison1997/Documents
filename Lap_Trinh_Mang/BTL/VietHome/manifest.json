@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "VietHome - Trang Tab Mới tuyệt vời",
+  "version": "5.3.2",
+    "short_name":"VietHome",
+  "author":"Trần Mạnh Cường",
+  "description": "Hãy cá nhân hoá màn hình Newtab của bạn với VietHome.",
+  "icons": { "16": "img/icon.png",
+           "48": "img/icon.png",
+          "128": "img/icon.png" },
+"browser_action": {
+    "name": "View the website information for ",
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html",
+    "width":"200px"
+  },          
+"background": {
+    "page": "background.html",
+    "script": "js/background.js"
+  },
+"chrome_url_overrides" : {
+        "newtab": "index.html"
+    },
+  "permissions": ["http://maytinhdibo.esy.es/","topSites","https://www.google.com/*"]
+
+}

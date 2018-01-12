@@ -1,0 +1,30 @@
+c:\users\chiso\onedrive\documents\visual studio 2015\Projects\Đoc số\Đoc số\bin\Debug\Đoc số.exe.config
+c:\users\chiso\onedrive\documents\visual studio 2015\Projects\Đoc số\Đoc số\bin\Debug\Đoc số.exe
+c:\users\chiso\onedrive\documents\visual studio 2015\Projects\Đoc số\Đoc số\bin\Debug\Đoc số.pdb
+c:\users\chiso\onedrive\documents\visual studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc_số.Form1.resources
+c:\users\chiso\onedrive\documents\visual studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc_số.Properties.Resources.resources
+c:\users\chiso\onedrive\documents\visual studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc số.csproj.GenerateResource.Cache
+c:\users\chiso\onedrive\documents\visual studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc số.exe
+c:\users\chiso\onedrive\documents\visual studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc số.pdb
+C:\Users\chiso\OneDrive\Documents\Visual Studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc số.csprojResolveAssemblyReference.cache
+F:\Tài liệu\Visual Studio 2015\Projects\Đoc số\Đoc số\bin\Debug\Đoc số.exe.config
+F:\Tài liệu\Visual Studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc số.exe
+F:\Tài liệu\Visual Studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc số.pdb
+F:\Tài liệu\Visual Studio 2015\Projects\Đoc số\Đoc số\bin\Debug\Đoc số.exe
+F:\Tài liệu\Visual Studio 2015\Projects\Đoc số\Đoc số\bin\Debug\Đoc số.pdb
+F:\Tài liệu\Visual Studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc số.csprojResolveAssemblyReference.cache
+F:\Tài liệu\Visual Studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc_số.Form1.resources
+F:\Tài liệu\Visual Studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc_số.Properties.Resources.resources
+F:\Tài liệu\Visual Studio 2015\Projects\Đoc số\Đoc số\obj\Debug\Đoc số.csproj.GenerateResource.Cache
+F:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\bin\Debug\Đoc số.exe.config
+F:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\obj\Debug\Đoc số.exe
+F:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\obj\Debug\Đoc số.pdb
+E:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\bin\Debug\Đoc số.exe.config
+E:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\obj\Debug\Đoc số.exe
+E:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\obj\Debug\Đoc số.pdb
+E:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\bin\Debug\Đoc số.exe
+E:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\bin\Debug\Đoc số.pdb
+E:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\obj\Debug\Đoc số.csprojResolveAssemblyReference.cache
+E:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\obj\Debug\Đoc_số.Form1.resources
+E:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\obj\Debug\Đoc_số.Properties.Resources.resources
+E:\Tài liệu\Visual Studio 2015\Projects\Đọc số\Đoc số\obj\Debug\Đoc số.csproj.GenerateResource.Cache

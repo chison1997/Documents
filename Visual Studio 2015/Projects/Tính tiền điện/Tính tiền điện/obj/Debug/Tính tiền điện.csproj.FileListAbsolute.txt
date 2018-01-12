@@ -1,0 +1,9 @@
+f:\tài liệu\visual studio 2015\Projects\Tính tiền điện\Tính tiền điện\bin\Debug\Tính tiền điện.exe.config
+F:\Tài liệu\Visual Studio 2015\Projects\Tính tiền điện\Tính tiền điện\bin\Debug\Tính tiền điện.exe
+F:\Tài liệu\Visual Studio 2015\Projects\Tính tiền điện\Tính tiền điện\bin\Debug\Tính tiền điện.pdb
+F:\Tài liệu\Visual Studio 2015\Projects\Tính tiền điện\Tính tiền điện\obj\Debug\Tính tiền điện.csprojResolveAssemblyReference.cache
+F:\Tài liệu\Visual Studio 2015\Projects\Tính tiền điện\Tính tiền điện\obj\Debug\Tính_tiền_điện.Form1.resources
+F:\Tài liệu\Visual Studio 2015\Projects\Tính tiền điện\Tính tiền điện\obj\Debug\Tính_tiền_điện.Properties.Resources.resources
+F:\Tài liệu\Visual Studio 2015\Projects\Tính tiền điện\Tính tiền điện\obj\Debug\Tính tiền điện.csproj.GenerateResource.Cache
+F:\Tài liệu\Visual Studio 2015\Projects\Tính tiền điện\Tính tiền điện\obj\Debug\Tính tiền điện.exe
+F:\Tài liệu\Visual Studio 2015\Projects\Tính tiền điện\Tính tiền điện\obj\Debug\Tính tiền điện.pdb

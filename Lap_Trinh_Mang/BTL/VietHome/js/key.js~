@@ -1,0 +1,22 @@
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "http://maytinhdibo.esy.es/keyword.json", true);
+xhr.onreadystatechange = function() {
+  if (xhr.readyState == 4) {
+    // WARNING! Might be injecting a malicious script!   
+        
+    var key=JSON.parse(xhr.responseText);
+   document.getElementById('key').innerHTML='';
+  
+ for(i=0;i<(key["a"].length-1);i++){
+ 	document.getElementById('key').innerHTML=document.getElementById('key').innerHTML+'<a title="'+key["a"][i]+'">'+key["a"][i]+'</a>, ';
+
+ }
+ 	document.getElementById('key').innerHTML=document.getElementById('key').innerHTML+'<a title="'+key["a"][i]+'">'+key["a"][i]+'</a>';
+  }
+ for(i=0;i<(key["a"].length-1);i++){
+  document.getElementById('key').getElementsByTagName('a')[i].addEventListener("click", function(event){
+  location.href=search[localStorage.searcher]+event.srcElement.title;
+});
+ }
+}
+xhr.send();

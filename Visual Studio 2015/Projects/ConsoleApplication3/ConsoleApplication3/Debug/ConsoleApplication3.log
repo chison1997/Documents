@@ -1,0 +1,6 @@
+﻿  ConsoleApplication3.cpp
+ConsoleApplication3.cpp(16): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
+  AssemblyInfo.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  ConsoleApplication3.vcxproj -> d:\documents\visual studio 2015\Projects\ConsoleApplication3\Debug\ConsoleApplication3.exe
+  ConsoleApplication3.vcxproj -> d:\documents\visual studio 2015\Projects\ConsoleApplication3\Debug\ConsoleApplication3.pdb (Partial PDB)

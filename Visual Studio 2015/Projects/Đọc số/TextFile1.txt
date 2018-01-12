@@ -1,0 +1,18 @@
+﻿            uint iSoKm = 0;
+            if (textBox1.Text != "")
+            {
+                try { iSoKm = uint.Parse(textBox1.Text);  } catch (Exception ex) { MessageBox.Show(ex.Message); }
+                finally
+                {
+                    uint iTienPhaiTra = 0;
+                    for (int i = 1; i <= iSoKm; i++)
+                    {
+                        if (i == 1) { iTienPhaiTra = 12000; continue; }
+                        else if ((i >= 2) && (i <= 5)) { iTienPhaiTra += 12000 * 95 / 100; continue; }
+                        else if ((i >= 6) && (i <= 10)) { iTienPhaiTra += 12000 * 90 / 100; continue; }
+                        else { iTienPhaiTra = iTienPhaiTra + ((iSoKm - 10) * 12000 * 85 / 100); break; }
+                       
+                    }
+                    textBox2.Text = iTienPhaiTra.ToString();
+                }
+            }

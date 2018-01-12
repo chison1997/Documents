@@ -1,0 +1,6 @@
+f:\tài liệu\visual studio 2015\Projects\DateTime\DateTime\bin\Debug\DateTime.exe.config
+f:\tài liệu\visual studio 2015\Projects\DateTime\DateTime\obj\Debug\DateTime.csprojResolveAssemblyReference.cache
+f:\tài liệu\visual studio 2015\Projects\DateTime\DateTime\bin\Debug\DateTime.exe
+f:\tài liệu\visual studio 2015\Projects\DateTime\DateTime\bin\Debug\DateTime.pdb
+f:\tài liệu\visual studio 2015\Projects\DateTime\DateTime\obj\Debug\DateTime.exe
+f:\tài liệu\visual studio 2015\Projects\DateTime\DateTime\obj\Debug\DateTime.pdb
