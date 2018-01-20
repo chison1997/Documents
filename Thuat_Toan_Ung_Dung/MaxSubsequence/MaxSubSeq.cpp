@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
+
 int* A;
 int n;
 
@@ -39,13 +41,19 @@ long maxSubseq()
 
 void readFile(char* fn)
 {
-	FILE* f = fopen(fn, "r");
+	FILE* f;
+	if ( !(f = fopen(fn, "r")) )
+	{
+		fprintf(stderr, "Can't open the file.\n");
+		exit(1);
+	}
 	fscanf(f, "%d", &n);
 	A = new int[n];
 	for(int i = 0; i < n; i++)
 	{
 		fscanf(f, "%d", &A[i]);
 	}
+	fclose(f);
 }
 
 int main(int argc, char** argv)
@@ -56,10 +64,10 @@ int main(int argc, char** argv)
 		return 1;
 	}
 	
-	
 	readFile(argv[1]);
 	
 	time_t t = clock();
+	
 	printf("Max Weight: %ld\n", maxSubseq());
 	printf("Time: %.2f\n", (float)(clock() - t)/CLOCKS_PER_SEC);
 	
