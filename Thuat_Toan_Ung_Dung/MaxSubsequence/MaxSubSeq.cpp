@@ -3,6 +3,24 @@
 int* A;
 int n;
 
+//Algo 1
+//long maxSubseq()
+//{
+//	long max = A[0]; 
+//	for(int i = 0; i < n; i++)
+//		for(int j = i; j < n; j++)
+//		{
+//			int s = 0;
+//			for(ing k = i; k <= j; k++)
+//				s += A[k];			
+//			if (s > max)
+//				max = s;
+//		}
+//	return max;
+//}
+
+
+//Algo 2
 long maxSubseq()
 {
 	long max = A[0]; 

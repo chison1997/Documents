@@ -12,6 +12,7 @@ int main(int argc, char** argv)
 	{
 		fprintf(f, "%d ", 50 - rand()%100);
 	}
+	fprintf(f, "\n");
 	
 	fclose(f);	
 	
