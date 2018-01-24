@@ -1,0 +1,7 @@
+D:\Documents\Lap_Trinh_.NET\Hello\Hello\bin\Debug\Hello.exe.config
+D:\Documents\Lap_Trinh_.NET\Hello\Hello\bin\Debug\Hello.exe
+D:\Documents\Lap_Trinh_.NET\Hello\Hello\bin\Debug\Hello.pdb
+D:\Documents\Lap_Trinh_.NET\Hello\Hello\obj\Debug\Hello.csprojResolveAssemblyReference.cache
+D:\Documents\Lap_Trinh_.NET\Hello\Hello\obj\Debug\Hello.csproj.CoreCompileInputs.cache
+D:\Documents\Lap_Trinh_.NET\Hello\Hello\obj\Debug\Hello.exe
+D:\Documents\Lap_Trinh_.NET\Hello\Hello\obj\Debug\Hello.pdb

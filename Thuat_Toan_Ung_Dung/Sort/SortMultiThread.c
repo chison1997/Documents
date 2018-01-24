@@ -11,25 +11,35 @@ int m, n, l, done = 0;;
 float * A;
 char* fn;
 
+int cmpFlt(const void* pa, const void* pb)
+{
+	float a = *(float*) pa;
+	float b = *(float*) pb;
+	return a - b;
+}
+
 void read(long o,float* A, int n, int c)
 {
 	FILE* f = fopen(fn, "r");
-	printf("start read file %d\n", c);
+	//printf("start read file %d\n", c);
 	fseek(f, o, SEEK_SET);
 	for(int i = 0; i < n; i ++)
 	{
 		fscanf(f, "%f", A + c*i);
 	}
-	printf("Read done %d\n", c);
+	//printf("Read done %d\n", c);
 	fclose(f);
 }
 
 void* subThread(void* a)
 {
-	printf("Create Thread\n");
+	//printf("Create Thread\n");
 	read(m, A+l-1, l, -1);
 	quickSort(A, 0, l-1);
+	//qsort(A, l, sizeof(float), cmpFlt);
+	
 	done = 1;
+	
 	return NULL;
 }
 
@@ -47,13 +57,12 @@ int main(int argc, char** argv)
 	f = fopen(argv[1], "r");
 	fn = argv[1];
 	fscanf(f, "%d", &n);
-
 	
 	l = RAM*1024*1024/(sizeof(float));
 	m = n - l;
 	A = (float*) malloc(RAM*1024*1024);
 	
-	pthread_t t0;
+	pthread_t t0; 
 	if (pthread_create(&t0, NULL, subThread, NULL) == -1)
 	{
 		fprintf(stderr,"Can't create thread\n");
@@ -61,18 +70,19 @@ int main(int argc, char** argv)
 
 	read(0, A, m, 1);
 	quickSort(A, 0, m-1);
-	printf("quickSort done\n");
+	//qsort(A, m, sizeof(float), cmpFlt);
+
+	//printf("quickSort done\n");
 
 	FILE* t = fopen("temp.txt", "wb+rb");
 	for(int i = 0; i < m; i++)
 	{
 		fwrite(A + i, 4, sizeof(float), t);
 	}
-	printf("Write temp file done\n");
+	//printf("Write temp file done\n");
 	fseek(t, 0, SEEK_SET);
-
+	
 	while (!done);
-	printf("OK\n");
 	// for(int i = 0; i < l; i++)
 	// {
 	// 	//printf("OK\n");

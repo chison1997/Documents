@@ -4,6 +4,7 @@ Sort.o: Sort.c
 	gcc -c Sort.c
 Sort: Sort.o quickSort.o
 	gcc Sort.o quickSort.o -o Sort
+	
 SortMultiThread.o: SortMultiThread.c
 	gcc -c SortMultiThread.c
 SortMultiThread: SortMultiThread.o quickSort.o

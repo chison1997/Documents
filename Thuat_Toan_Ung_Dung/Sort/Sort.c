@@ -12,7 +12,7 @@ int main(int argc, char** argv)
 	{
 		fprintf(stderr, "Syntax Error\n%s InputFile\n", argv[0]);
 	}
-	
+
 	time_t start = clock();
 
 	FILE* f = fopen(argv[1], "r");
@@ -31,8 +31,9 @@ int main(int argc, char** argv)
 
 	quickSort(A, 0, m-1);
 	
-
-	FILE* t = fopen("temp.txt", "wb+rb");
+	FILE* t;
+	if ((t = fopen("temp.txt", "wb+rb")) == NULL)
+		printf("Error");
 	for(int i = 0; i < m; i++)
 	{
 		fwrite(A + i, 4, sizeof(float), t);
