@@ -66,6 +66,7 @@ int main(int argc, char** argv)
 	if (pthread_create(&t0, NULL, subThread, NULL) == -1)
 	{
 		fprintf(stderr,"Can't create thread\n");
+		return 1;
 	}
 
 	read(0, A, m, 1);
@@ -74,7 +75,12 @@ int main(int argc, char** argv)
 
 	//printf("quickSort done\n");
 
-	FILE* t = fopen("temp.txt", "wb+rb");
+	FILE* t;
+	if ((t = fopen("temp.txt", "wb+rb")) == NULL)
+	{
+		fprintf(stderr, "Can't create temp\n");
+		return 1;
+	}
 	for(int i = 0; i < m; i++)
 	{
 		fwrite(A + i, 4, sizeof(float), t);
@@ -99,7 +105,12 @@ int main(int argc, char** argv)
 	// }
 
 //Merge
-	FILE* g = fopen("out.txt", "w");
+	FILE* g;
+	if ((g = fopen("out.txt", "w")) == NULL)
+	{
+		fprintf(stderr, "Error.\n");
+		return 1;
+	}
 	int i = 0, j = 0;
 	float temp;
 	fread(&temp, 4, sizeof(temp), t);
