@@ -1,11 +1,14 @@
-MaxSubSeq.o: MaxSubSeq.cpp
-	g++ -c MaxSubSeq.cpp
 MaxSubSeq: MaxSubSeq.o
 	g++ MaxSubSeq.o -o MaxSubSeq
-taoDay.o: taoDay.cpp
-	g++ -c taoDay.cpp
+
+MaxSubSeq.o: MaxSubSeq.cpp
+	g++ -c MaxSubSeq.cpp
+
 taoDay: taoDay.o
 	g++ taoDay.o -o taoDay
+taoDay.o: taoDay.cpp
+	g++ -c taoDay.cpp
+
 seq10.txt: taoDay
 	./taoDay 10 seq10.txt
 seq100.txt: taoDay
@@ -17,3 +20,5 @@ seq10000.txt: taoDay
 seq100000.txt: taoDay
 	./taoDay 100000 seq100000.txt
 
+clean:
+	rm *.o

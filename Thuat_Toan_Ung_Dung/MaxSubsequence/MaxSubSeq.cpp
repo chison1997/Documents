@@ -22,20 +22,43 @@ int n;
 //}
 
 //Algo 2
+// long maxSubseq()
+// {
+// 	long max = A[0]; 
+// 	for(int i = 0; i < n; i++)
+// 	{
+// 		int s = 0;
+// 		for(int j = i; j < n; j++)
+// 		{
+// 			s += A[j];			
+// 			if (s > max)
+// 				max = s;
+// 		}
+// 	}
+// 	return max;
+// }
+
+//Algo 3: dynamic programing
 long maxSubseq()
 {
-	long max = A[0]; 
-	for(int i = 0; i < n; i++)
+	long Smax = A[0], S = A[0];
+
+	for(int i = 1; i < n; i++)
 	{
-		int s = 0;
-		for(int j = i; j < n; j++)
+		if (S <= 0)
 		{
-			s += A[j];			
-			if (s > max)
-				max = s;
+			S = A[i];
 		}
+		else 
+		{
+			S += A[i];
+		}
+		if (S > Smax)
+			Smax = S;
 	}
-	return max;
+
+	return Smax;
+
 }
 
 void readFile(char* fn)
@@ -68,7 +91,7 @@ int main(int argc, char** argv)
 	time_t t = clock();
 	
 	printf("Max Weight: %ld\n", maxSubseq());
-	printf("Time: %.2f\n", (float)(clock() - t)/CLOCKS_PER_SEC);
+	printf("Time: %.3f s\n", (float)(clock() - t)/CLOCKS_PER_SEC);
 	
 	delete A;
 	return 0;

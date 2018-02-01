@@ -17,7 +17,6 @@ void process()
 
 void TRY(int k)
 {
-	
 	if (isspace(S[k])) 
 	{
 		s[k]=' ';
