@@ -12,8 +12,25 @@ void print()
 	printf("\n");
 }
 
+//liet ke xau nhi phan
+void TRY1(int k)
+{
+	for(int v = 0; v <= 1; v++)
+	{	
+		A[k] = v;
+		
+		if (k == n-1)
+		{
+			print();
+		}
+		else
+			TRY1(k + 1);
+	}
+}
+
+
 //khong co 2 bit 1 dung lien nhau
-void TRY(int k)
+void TRY2(int k)
 {
 	for(int v = 0; v <= 1; v++)
 	{
@@ -30,13 +47,13 @@ void TRY(int k)
 			print();
 		}
 		else
-			TRY(k + 1);
+			TRY2(k + 1);
 	}
 }
 
 
 //khong co 2 bit 1 dung lien nhau va co dung 7 bit 1
-void TRY1(int k)
+void TRY3(int k)
 {
 	for(int v = 0; v <= 1; v++)
 	{
@@ -60,7 +77,7 @@ void TRY1(int k)
 				print();
 		}
 		else
-			TRY1(k + 1);
+			TRY3(k + 1);
 
 	}
 	c--;
