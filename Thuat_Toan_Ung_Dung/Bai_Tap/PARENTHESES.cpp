@@ -1,6 +1,7 @@
 #include <stack>
 #include <string>
 #include <iostream>
+#include <stdio.h>
 
 using namespace std;
 
@@ -42,11 +43,12 @@ bool check(string p)
 int main()
 {
 	string p;
-	cin >> p;
-	if (check(p))
-		cout << "true" << endl;
-	else
-		cout << "false" << endl;
- 	
+	int T;
+	scanf("%d", &T);
+	for(int i = 0; i < T; i++)
+	{
+		cin >> p;
+		printf("%d\n", check(p));
+	}
 	return 0;
 }

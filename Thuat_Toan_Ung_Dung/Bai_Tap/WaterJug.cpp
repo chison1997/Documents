@@ -1,203 +1,106 @@
+// C++ program to count minimum number of steps
+// required to measure d litres water using jugs
+// of m litres and n litres capacity.
+//#include <bits/stdc++.h>
 #include <stdio.h>
-#include <queue>
-#include <list>
-#include <stack>
-
+#include <algorithm>
+//#include <stdc++>
 using namespace std;
-
-struct state
+ 
+// Utility function to return GCD of 'a'
+// and 'b'.
+int gcd(int a, int b)
 {
-	int x;
-	int y;
-	char* msg;
-	state* p;
-};
-
-queue<state*> Q;
-list<state*> L;
-int visited[100][100] = {{0}};
-state* f;
-
-int a, b, c;
-
-state* state1(state* s0)
-{
-	if (visited[s0->x][0])
-		return NULL;
-	
-	state* s = new state{s0->x, 0, "Do het nuoc o coc 2", s0};
-	visited[s->x][s->y] = 1;
-	Q.push(s);
-	L.push_back(s);
-	return s;
+    if (b==0)
+       return a;
+    return gcd(b, a%b);
 }
-
-state* state2(state* s0)
+ 
+/* fromCap -- Capacity of jug from which
+              water is poured
+   toCap   -- Capacity of jug to which
+              water is poured
+   d       -- Amount to be measured */
+int pour(int fromCap, int toCap, int d)
 {
-	if (visited[0][s0->y])
-		return NULL;
-	
-	state* s = new state{0, s0->y, "Do het nuoc o coc 1", s0};
-	visited[s->x][s->y] = 1;
-	Q.push(s);
-	L.push_back(s);
-	return s;
+    // Initialize current amount of water
+    // in source and destination jugs
+    int from = fromCap;
+    int to = 0;
+ 
+    // Initialize count of steps required
+    int step = 1; // Needed to fill "from" Jug
+ 
+    // Break the loop when either of the two
+    // jugs has d litre water
+    while (from != d && to != d)
+    {
+        // Find the maximum amount that can be
+        // poured
+        int temp = min(from, toCap - to);
+ 
+        // Pour "temp" litres from "from" to "to"
+        to   += temp;
+        from -= temp;
+ 
+        // Increment count of steps
+        step++;
+ 
+        if (from == d || to == d)
+            break;
+ 
+        // If first jug becomes empty, fill it
+        if (from == 0)
+        {
+            from = fromCap;
+            step++;
+        }
+ 
+        // If second jug becomes full, empty it
+        if (to == toCap)
+        {
+            to = 0;
+            step++;
+        }
+    }
+    return step;
 }
-
-state* state3(state* s0)
+ 
+// Returns count of minimum steps needed to
+// measure d litre
+int minSteps(int m, int n, int d)
 {
-	if (visited[a][s0->y])
-		return NULL;
-	
-	state* s = new state{a, s0->y, "Do day nuoc vao coc 1", s0};
-	visited[s->x][s->y] = 1;
-	Q.push(s);
-	L.push_back(s);
-	return s;
+    // To make sure that m is smaller than n
+    if (m > n)
+        swap(m, n);
+ 
+    // For d > n we cant measure the water
+    // using the jugs
+    if (d > n)
+        return -1;
+ 
+    // If gcd of n and m does not divide d
+    // then solution is not possible
+    if ((d % gcd(n,m)) != 0)
+        return -1;
+ 
+    // Return minimum two cases:
+    // a) Water of n litre jug is poured into
+    //    m litre jug
+    // b) Vice versa of "a"
+    return min(pour(n,m,d), pour(m,n,d));  
 }
-
-state* state4(state* s0)
-{
-	if (visited[s0->x][b])
-		return NULL;
-	
-	state* s = new state{s0->x, b, "Do day nuoc vao coc 2", s0};
-	visited[s->x][s->y] = 1;
-	Q.push(s);
-	L.push_back(s);
-	return s;
-}
-
-state* state5(state* s0)
-{
-	if (s0->x + s0->y < a)
-		return NULL;
-	if (visited[a][s0->x + s0->y - a])
-		return NULL;
-	
-	state* s = new state{a, s0->x + s0->y - a, "Do nuoc tu coc 2 vao day coc 1", s0};
-	visited[s->x][s->y] = 1;
-	Q.push(s);
-	L.push_back(s);
-	return s;
-}
-
-state* state6(state* s0)
-{
-	if (s0->x + s0->y >= a)
-		return NULL;
-	if (visited[s0->x + s0->y][0])
-		return NULL;
-	
-	state* s = new state{s0->x + s0->y, 0, "Do het nuoc tu coc 2 vao coc 1", s0};
-	visited[s->x][s->y] = 1;
-	Q.push(s);
-	L.push_back(s);
-	return s;
-}
-
-state* state7(state* s0)
-{
-	if (s0->x + s0->y < b)
-		return NULL;
-	if (visited[s0->x + s0->y - b][b])
-		return NULL;
-	
-	state* s = new state{s0->x + s0->y - b, b, "Do nuoc tu coc 1 vao day coc 2", s0};
-	visited[s->x][s->y] = 1;
-	Q.push(s);
-	L.push_back(s);
-	return s;
-}
-
-
-state* state8(state* s0)
-{
-	if (s0->x + s0->y >= b)
-		return NULL;
-	if (visited[0][s0->x + s0->y])
-		return NULL;
-	
-	state* s = new state{0, s0->x + s0->y, "Do het nuoc tu coc 1 vao coc 2", s0};
-	visited[s->x][s->y] = 1;
-	Q.push(s);
-	L.push_back(s);
-	return s;
-}
-
-bool check(state* s)
-{
-	if (s == NULL)
-		return false;
-	return s->x == c || s->y == c;
-}
-
-
-state* waterJug()
-{
-		
-	while (!Q.empty())
-	{
-		state* s = Q.front();
-		Q.pop();
-
-		if (check(f = state1(s))) return f;
-		if (check(f = state2(s))) return f;
-		if (check(f = state3(s))) return f;
-		if (check(f = state4(s))) return f;
-		if (check(f = state5(s))) return f;
-		if (check(f = state6(s))) return f;
-		if (check(f = state7(s))) return f;
-		if (check(f = state8(s))) return f;
-	}
-}
-
-void print()
-{
-	stack<state*> S;
-	while (f != NULL)
-	{
-		S.push_back(f);
-		f = f->p;
-	}
-	while (!S.empty())
-	{
-		state* s = S.top();
-		printf("%s, (%d, %d)\n", s->msg, s->x, s->y);
-		S.pop();
-	}
-
-}
-
-void free()
-{
-	while(!L.empty())
-	{
-		delete L.top();
-		L.pop();
-	}
-}
-
+ 
+// Driver code to test above
 int main()
 {
-	
-	scanf("%d %d %d", &a, &b, &c);
-	
-	state* s0 = new state();
-	s0->x = 0;
-	s0->y = 0;
-	s0->msg = NULL;
-	s0->p = NULL;
-	
-	Q.push(s0);
-	L.push_back(s0);
-	visited[0][0] = 1;
-	
-	waterJug();
-	
-	print();
-	
-	free();
-	
-	return 0;
+    //int n = 3, m = 5, d = 4;
+    int T, a, b, c;
+    scanf("%d", &T);
+    for(int i = 0; i < T; i++)
+    {
+        scanf("%d %d %d", &a, &b, &c);
+        printf("%d\n", minSteps(a, b, c));
+    }
+    return 0;
 }

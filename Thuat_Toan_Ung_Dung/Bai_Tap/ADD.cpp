@@ -7,6 +7,6 @@ int main()
 
     scanf("%llu %llu", &a, &b);
     c = a + b;
-    printf("%llu", c);
+    printf("%llu\n", c);
     return 0;
 }

@@ -8,6 +8,8 @@ void print()
         printf("%d ", A[i]);
     printf("\n");
 }
+
+
 int main()
 {
     

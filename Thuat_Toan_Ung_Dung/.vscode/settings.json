@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "deque": "cpp",
+        "exception": "cpp",
+        "fstream": "cpp",
+        "ios": "cpp",
+        "istream": "cpp",
+        "list": "cpp",
+        "ostream": "cpp",
+        "streambuf": "cpp",
+        "tuple": "cpp",
+        "vector": "cpp",
+        "xiosbase": "cpp",
+        "xstring": "cpp"
+    }
+}

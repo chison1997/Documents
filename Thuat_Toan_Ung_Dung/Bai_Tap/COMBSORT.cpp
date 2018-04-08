@@ -8,6 +8,8 @@ int neg;
 int scandigits(float *x, int div) {
   register int c = gc();
   register float pow10 = 1;
+  //int c = gc();
+  //float pow10 = 1;
   if ( x == NULL ) {
     return -1;
   }
@@ -44,22 +46,33 @@ void scanfloat(float *x) {
   *x = left + right;
 }
 
-void swap(float& a, float& b)
+// void swap(float& a, float& b)
+// {
+// //	register float t = a;
+
+//   float t = a;
+//   a = b;
+//   b = t;
+
+// }
+
+void swap(int* a, int*b)
 {
-	register float A = a, B = b;
-	b = A;
-	a = B;
+    register int t = *a ^ *b;
+    *b = *b ^ t;
+    *a = t ^ *b;
 }
 
 void combSort(float* A, int n)
 {
     int gap = n;
-    float shrink = 1.3;
+   // float shrink = 1.3;
     bool sorted = 0;
 
     while ((gap > 1) || (sorted == 0))
     {
-        gap = floor(gap/shrink);
+        //gap = floor(gap/shrink);
+        gap = gap * 10 / 13;
         if (gap < 1) gap = 1;
         int i = 0;
         if (gap == 1)
@@ -69,7 +82,7 @@ void combSort(float* A, int n)
         {
             if (A[i] > A[i+gap])
             {
-                swap(A[i], A[i+gap]);
+                swap((int*)&A[i], (int*)&A[i+gap]);
                 if (gap == 1)
                     sorted = 0;
             }

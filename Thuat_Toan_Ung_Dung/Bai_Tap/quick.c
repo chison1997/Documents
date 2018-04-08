@@ -19,14 +19,14 @@ void swap(long long* a, long long* b)
 
 void swap(float* a, float* b)
 {
-    register float t = *a;
+    float t = *a;
     *a = *b;
     *b = t;
 }
 
 void swap(double* a, double* b)
 {
-    register double t = *a;
+    double t = *a;
     *a = *b;
     *b = t;
 }
