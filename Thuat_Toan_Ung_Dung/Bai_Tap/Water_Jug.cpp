@@ -157,7 +157,7 @@ void print()
 	stack<state*> S;
 	while (f != NULL)
 	{
-		S.push_back(f);
+		S.push(f);
 		f = f->p;
 	}
 	while (!S.empty())
@@ -169,14 +169,14 @@ void print()
 
 }
 
-void free()
-{
-	while(!L.empty())
-	{
-		delete L.top();
-		L.pop();
-	}
-}
+//void free()
+//{
+//	while(!L.empty())
+//	{
+//		delete L.top();
+//		L.pop();
+//	}
+//}
 
 int main()
 {
@@ -197,7 +197,7 @@ int main()
 	
 	print();
 	
-	free();
+	//free();
 	
 	return 0;
 }

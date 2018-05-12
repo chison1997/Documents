@@ -1,13 +1,241 @@
 Edge
-Edge
-Edge
-Edge
-Chrome
-test
-est
+undefined
+undefined
+undefined
+undefined
+undefined
+undefined
+http://dantri.com">
+						<figure>
+							<img src="img/dantri.png">
+							<figcaption>Dantri</figcaption>
+						</figure>
+					</a>
+					<a href="http://vnexpress.net/">
+						<figure>
+							<img src="img/vnexpress.png">
+							<figcaption>VnExpress</figcaption>
+						</figure>
+					</a>
+					<a href="http://mail.google.com">
+						<figure>
+							<img src="img/gmail.png">
+							<figcaption>Gmail</figcaption>
+						</figure>
+					</a>
+					<a href="http://mp3.zing.vn">
+						<figure>
+							<img src="img/mp3.png">
+							<figcaption>Zing mp3</figcaption>
+						</figure>
+					</a>
+					<a href="http://nhaccuatui.com">
+						<figure>
+							<img src="img/nhaccuatui.png">
+							<figcaption>Nhạc của tui</figcaption>
+						</figure>
+					</a>
+					<a href="http://youtube.com">
+						<figure>
+							<img src="img/yt.png">
+							<figcaption>Youtube</figcaption>
+						</figure>
+					</a>
+					<a href="http://techrum.vn">
+						<figure>
+							<img src="img/techrum.png">
+							<figcaption>Techrum.vn</figcaption>
+						</figure>
+					</a>
+					<a href="http://tinhte.vn">
+						<figure>
+							<img src="img/tinhte.png">
+							<figcaption>Tinhte.vn</figcaption>
+						</figure>
+					</a>
+				</div>
 
 
+				<div id="website">
+					<span id="web"></span>
 
-Edge
-Edge
+
+					<span id="setde">
+
+						<a id="settingbtn">
+							<figure>
+								<img src="img/setting.png">
+								<figcaption>Cài đặt</figcaption>
+							</figure>
+						</a>
+
+						<a id="editbtn">
+							<figure>
+								<img src="img/edit.png">
+								<figcaption>Chỉnh sửa</figcaption>
+							</figure>
+						</a>
+
+						<a id="bookmark">
+							<figure>
+								<img src="img/bookmark.png">
+								<figcaption>Dấu trang</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<style id="style">
+		</style>
+		<input id="gg" style="display:none" value="https://plus.google.com/_/favicon?domain_url=">
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/index.js"></script>
+		
+	</body>
+
+	</html>		<center style="position:absolute;bottom:10px;width:100%">
+					<button id="reset" style="zoom:75%;margin-bottom:12px;">Khôi phục mặc định</button>
+					<p>
+						<h5>
+							<a style="text-decoration:none" href="https://www.facebook.com/viethomeapp/">Facebook Fanpage</a>
+						</h5>
+						<h5>&#169; Mtc, 2017</h5>
+					</p>
+				</center>
+			</div>
+			<div id="editpop">
+				<span class="close" style="float:right;font-size:24px;" id="closeedit">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</span>
+				<h2>
+					<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Chỉnh sửa truy cập nhanh</h2>
+					<h3>Quản lí các trang có sẵn
+						<button class="del">Xoá</button>
+					</h3>
+					<div id="editdiv"></div>
+					<center>
+						<button id="doneweb" style="margin:4px;color:#456;display:none;">Xong</button>
+					</center>
+					<div id="addweb">
+						<h3>Thêm trang của bạn</h3>
+	
+undefined
+http://dantri.com">
+						<figure>
+							<img src="img/dantri.png">
+							<figcaption>Dantri</figcaption>
+						</figure>
+					</a>
+					<a href="http://vnexpress.net/">
+						<figure>
+							<img src="img/vnexpress.png">
+							<figcaption>VnExpress</figcaption>
+						</figure>
+					</a>
+					<a href="http://mail.google.com">
+						<figure>
+							<img src="img/gmail.png">
+							<figcaption>Gmail</figcaption>
+						</figure>
+					</a>
+					<a href="http://mp3.zing.vn">
+						<figure>
+							<img src="img/mp3.png">
+							<figcaption>Zing mp3</figcaption>
+						</figure>
+					</a>
+					<a href="http://nhaccuatui.com">
+						<figure>
+							<img src="img/nhaccuatui.png">
+							<figcaption>Nhạc của tui</figcaption>
+						</figure>
+					</a>
+					<a href="http://youtube.com">
+						<figure>
+							<img src="img/yt.png">
+							<figcaption>Youtube</figcaption>
+						</figure>
+					</a>
+					<a href="http://techrum.vn">
+						<figure>
+							<img src="img/techrum.png">
+							<figcaption>Techrum.vn</figcaption>
+						</figure>
+					</a>
+					<a href="http://tinhte.vn">
+						<figure>
+							<img src="img/tinhte.png">
+							<figcaption>Tinhte.vn</figcaption>
+						</figure>
+					</a>
+				</div>
+
+
+				<div id="website">
+					<span id="web"></span>
+
+
+					<span id="setde">
+
+						<a id="settingbtn">
+							<figure>
+								<img src="img/setting.png">
+								<figcaption>Cài đặt</figcaption>
+							</figure>
+						</a>
+
+						<a id="editbtn">
+							<figure>
+								<img src="img/edit.png">
+								<figcaption>Chỉnh sửa</figcaption>
+							</figure>
+						</a>
+
+						<a id="bookmark">
+							<figure>
+								<img src="img/bookmark.png">
+								<figcaption>Dấu trang</figcaption>
+							</figure>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<style id="style">
+		</style>
+		<input id="gg" style="display:none" value="https://plus.google.com/_/favicon?domain_url=">
+
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/index.js"></script>
+		
+	</body>
+
+	</html>		<center style="position:absolute;bottom:10px;width:100%">
+					<button id="reset" style="zoom:75%;margin-bottom:12px;">Khôi phục mặc định</button>
+					<p>
+						<h5>
+							<a style="text-decoration:none" href="https://www.facebook.com/viethomeapp/">Facebook Fanpage</a>
+						</h5>
+						<h5>&#169; Mtc, 2017</h5>
+					</p>
+				</center>
+			</div>
+			<div id="editpop">
+				<span class="close" style="float:right;font-size:24px;" id="closeedit">
+					<i class="fa fa-angle-right" aria-hidden="true"></i>
+				</span>
+				<h2>
+					<i class="fa fa-pencil-square-o" aria-hidden="true"></i> Chỉnh sửa truy cập nhanh</h2>
+					<h3>Quản lí các trang có sẵn
+						<button class="del">Xoá</button>
+					</h3>
+					<div id="editdiv"></div>
+					<center>
+						<button id="doneweb" style="margin:4px;color:#456;display:none;">Xong</button>
+					</center>
+					<div id="addweb">
+						<h3>Thêm trang của bạn</h3>
+	
 undefined
